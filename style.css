@@ -83,6 +83,7 @@ nav a,
     font-weight: 800;
     letter-spacing: 1.5px;
     color: #c6c6cc;
+    transition: .2s;
 }
 
 nav a:hover,
@@ -103,6 +104,7 @@ nav a:hover,
     font-size: 24px;
     cursor: pointer;
 }
+
 
 /* INÍCIO */
 
@@ -140,6 +142,7 @@ h1 {
 
 .hero h1 i {
     color: #ed75a6;
+    font-style: normal;
 }
 
 .hero-copy {
@@ -177,6 +180,7 @@ h1 {
     font-size: 10px;
     font-weight: 800;
     letter-spacing: 1px;
+    color: #d4d4d8;
 }
 
 .hero-stats {
@@ -217,6 +221,7 @@ h1 {
     transform: rotate(3deg);
     border: 1px solid rgba(255,255,255,.2);
     box-shadow: 25px 25px 0 rgba(244,216,76,.08);
+    overflow: hidden;
 }
 
 .hero-image img,
@@ -225,6 +230,7 @@ h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .floating-card {
@@ -236,6 +242,7 @@ h1 {
     padding: 16px 20px;
     min-width: 185px;
     border: 1px solid var(--line);
+    box-shadow: 0 15px 40px #08090d;
 }
 
 .floating-card small {
@@ -251,7 +258,8 @@ h1 {
     margin: 8px 0;
 }
 
-/* SEÇÕES */
+
+/* SEÇÃO SOBRE */
 
 .section {
     padding: 110px 9%;
@@ -305,6 +313,7 @@ h1 {
     padding-bottom: 8px;
     font-size: 9px;
     font-weight: 900;
+    letter-spacing: 1px;
 }
 
 .feature-strip {
@@ -317,6 +326,14 @@ h1 {
 .feature-strip article {
     padding: 25px 22px;
     border-right: 1px solid #c9c6bc;
+}
+
+.feature-strip article:first-child {
+    padding-left: 0;
+}
+
+.feature-strip article:last-child {
+    border-right: 0;
 }
 
 .feature-icon {
@@ -340,6 +357,7 @@ h1 {
     line-height: 1.6;
 }
 
+
 /* AGENTES */
 
 .agents {
@@ -361,6 +379,7 @@ h1 {
     font-size: 11px;
     line-height: 1.8;
     color: var(--muted);
+    padding-bottom: 5px;
 }
 
 .agent-tools {
@@ -380,6 +399,11 @@ h1 {
     width: 250px;
 }
 
+.search-box span {
+    font-size: 22px;
+    color: var(--yellow);
+}
+
 .search-box input {
     background: transparent;
     border: 0;
@@ -387,6 +411,10 @@ h1 {
     color: white;
     font: 11px Inter;
     width: 100%;
+}
+
+.search-box input::placeholder {
+    color: #81828e;
 }
 
 .filter-list {
@@ -401,8 +429,10 @@ h1 {
     color: #a9aab2;
     padding: 10px 13px;
     font-size: 8px;
+    letter-spacing: 1px;
     font-weight: 800;
     cursor: pointer;
+    transition: .2s;
 }
 
 .filter.active,
@@ -427,12 +457,20 @@ h1 {
 
 .agent-card:hover {
     transform: translateY(-6px);
-    border-color: var(--yellow);
+    border-color: rgba(244,216,76,.5);
 }
 
 .agent-photo {
     height: 265px;
     overflow: hidden;
+}
+
+.agent-photo img {
+    transition: .3s;
+}
+
+.agent-card:hover .agent-photo img {
+    transform: scale(1.05);
 }
 
 .agent-info {
@@ -444,20 +482,29 @@ h1 {
 
 .agent-info h3 {
     font-size: 23px;
+    letter-spacing: 0;
 }
 
 .agent-info span {
     font-size: 8px;
+    letter-spacing: 1.4px;
     color: var(--yellow);
     display: block;
     margin-top: 5px;
+}
+
+.agent-info > b {
+    font: 700 17px 'Barlow Condensed';
+    color: #777987;
 }
 
 .no-results {
     padding: 30px;
     color: var(--muted);
     text-align: center;
+    font-size: 13px;
 }
+
 
 /* FACÇÕES */
 
@@ -468,6 +515,10 @@ h1 {
 
 .factions .section-heading {
     margin-top: 25px;
+}
+
+.factions .section-heading p {
+    color: #62636b;
 }
 
 .faction-grid {
@@ -481,7 +532,7 @@ h1 {
     padding: 25px;
     min-height: 260px;
     background: #222431;
-    color: white;
+    color: #f4f2ed;
 }
 
 .faction-two {
@@ -514,7 +565,9 @@ h1 {
     color: #c5c3cc;
     line-height: 1.7;
     margin: 10px 0 20px;
+    max-width: 260px;
 }
+
 
 /* NOVA ERIDU */
 
@@ -527,6 +580,7 @@ h1 {
 
 .city-visual {
     height: 430px;
+    border: 1px solid var(--line);
     overflow: hidden;
 }
 
@@ -549,27 +603,45 @@ h1 {
     margin-top: 35px;
     padding-top: 15px;
     font-size: 8px;
+    letter-spacing: 1.2px;
     color: var(--yellow);
 }
+
 
 /* FINAL */
 
 .closing {
     text-align: center;
     padding: 100px 20px 110px;
-    background: #171923;
+    background: radial-gradient(
+        ellipse at center,
+        rgba(244,216,76,.1),
+        transparent 60%
+    ), #171923;
 }
 
 .closing-mark {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 25px;
+    background: var(--yellow);
+    color: #171923;
+    display: grid;
+    place-items: center;
     font: 900 43px 'Barlow Condensed';
-    color: var(--yellow);
-    margin-bottom: 25px;
 }
 
 .closing h2 {
     font-size: clamp(58px, 8vw, 100px);
     margin: 25px 0 35px;
 }
+
+.closing h2 em {
+    color: var(--yellow);
+}
+
+
+/* RODAPÉ */
 
 footer {
     padding: 25px 7%;
@@ -585,17 +657,24 @@ footer {
 .footer-brand {
     font: 900 18px 'Barlow Condensed';
     color: white;
+    letter-spacing: 1px;
 }
 
 .footer-brand span {
     display: block;
     font: 8px Inter;
+    letter-spacing: 2px;
     color: var(--yellow);
 }
 
-/* RESPONSIVIDADE */
+
+/* RESPONSIVIDADE PARA TABLETS */
 
 @media (max-width: 850px) {
+
+    .topbar {
+        padding: 0 5%;
+    }
 
     nav {
         gap: 16px;
@@ -607,6 +686,14 @@ footer {
         grid-template-columns: 1fr .8fr;
     }
 
+    .hero-art {
+        height: 400px;
+    }
+
+    .hero-image {
+        height: 350px;
+    }
+
     .section {
         padding: 85px 6%;
     }
@@ -615,7 +702,14 @@ footer {
         grid-template-columns: repeat(2,1fr);
     }
 
+    .agent-photo {
+        height: 230px;
+    }
+
 }
+
+
+/* RESPONSIVIDADE PARA CELULARES */
 
 @media (max-width: 620px) {
 
@@ -642,6 +736,7 @@ footer {
         padding: 22px 6%;
         flex-direction: column;
         gap: 20px;
+        border-bottom: 1px solid var(--line);
     }
 
     nav.open {
@@ -651,6 +746,11 @@ footer {
     .hero {
         display: block;
         padding: 75px 7%;
+        min-height: auto;
+    }
+
+    .hero h1 {
+        font-size: clamp(60px, 16vw, 100px);
     }
 
     .hero-art {
@@ -660,11 +760,16 @@ footer {
 
     .hero-image {
         height: 310px;
+        width: 75%;
     }
 
     .hero-stats {
         gap: 17px;
         margin-top: 45px;
+    }
+
+    .hero-stats span {
+        font-size: 7px;
     }
 
     .section {
@@ -677,19 +782,37 @@ footer {
         gap: 28px;
     }
 
-    .feature-strip,
-    .faction-grid {
+    .intro-layout {
+        margin-bottom: 40px;
+    }
+
+    .intro h2,
+    .section-heading h2,
+    .city h2 {
+        font-size: 58px;
+    }
+
+    .feature-strip {
         grid-template-columns: 1fr;
     }
 
-    .feature-strip article {
+    .feature-strip article,
+    .feature-strip article:first-child {
         padding: 20px 0;
         border-right: 0;
         border-bottom: 1px solid #c9c6bc;
     }
 
+    .feature-strip article:last-child {
+        border-bottom: 0;
+    }
+
     .section-heading {
         display: block;
+    }
+
+    .section-heading p {
+        margin-top: 20px;
     }
 
     .agent-tools {
@@ -699,6 +822,14 @@ footer {
 
     .search-box {
         width: 100%;
+    }
+
+    .filter-list {
+        gap: 6px;
+    }
+
+    .filter {
+        padding: 9px;
     }
 
     .agent-grid {
@@ -718,8 +849,28 @@ footer {
         font-size: 19px;
     }
 
+    .agent-info span {
+        font-size: 7px;
+    }
+
+    .faction-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .faction-card {
+        min-height: 230px;
+    }
+
     .city-visual {
         height: 300px;
+    }
+
+    .city-coordinates {
+        font-size: 7px;
+    }
+
+    .closing {
+        padding: 80px 15px;
     }
 
     footer {
@@ -729,6 +880,9 @@ footer {
 
 }
 
+
+/* CELULARES MENORES */
+
 @media (max-width: 380px) {
 
     .agent-grid {
@@ -737,6 +891,19 @@ footer {
 
     .agent-photo {
         height: 230px;
+    }
+
+    .hero-actions {
+        gap: 15px;
+    }
+
+    .button {
+        padding: 14px;
+        font-size: 9px;
+    }
+
+    .hero-stats {
+        gap: 10px;
     }
 
 }
