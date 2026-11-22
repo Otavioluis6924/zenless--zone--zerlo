@@ -1,0 +1,539 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Um guia de fã sobre Zenless Zone Zero.">
+
+    <title>Zenless Zone Zero | New Eridu</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <a class="brand" href="#inicio">
+        <span class="brand-mark">Z</span>
+
+        <span>
+            NEW ERIDU
+            <small>UNOFFICIAL FAN DATABASE</small>
+        </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle">☰</button>
+
+    <nav id="mainNav">
+        <a href="#sobre">O JOGO</a>
+        <a href="#agentes">AGENTES</a>
+        <a href="#faccoes">FACÇÕES</a>
+        <a href="#mundos">NOVA ERIDU</a>
+    </nav>
+
+    <a class="top-cta" href="#agentes">
+        EXPLORAR ↗
+    </a>
+
+</header>
+
+<main>
+
+<!-- INÍCIO -->
+
+<section class="hero" id="inicio">
+
+    <div class="hero-content">
+
+        <div class="eyebrow">
+            ● TRANSMISSÃO RECEBIDA · NOVA ERIDU
+        </div>
+
+        <h1>
+            WELCOME TO
+            <span>THE ZERO</span><i>.</i>
+        </h1>
+
+        <p class="hero-copy">
+            Entre nos Hollows, conheça os agentes e descubra
+            os segredos de uma cidade que aprendeu a viver
+            à beira do desconhecido.
+        </p>
+
+        <div class="hero-actions">
+
+            <a href="#sobre" class="button">
+                CONHECER O JOGO ↗
+            </a>
+
+            <a href="#agentes" class="text-link">
+                VER AGENTES ↓
+            </a>
+
+        </div>
+
+        <div class="hero-stats">
+
+            <div>
+                <strong>01</strong>
+                <span>UMA NOVA<br>AVENTURA</span>
+            </div>
+
+            <div>
+                <strong>∞</strong>
+                <span>POSSIBILIDADES<br>EM NOVA ERIDU</span>
+            </div>
+
+            <div>
+                <strong>ZZZ</strong>
+                <span>ZENLESS<br>ZONE ZERO</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="hero-art">
+
+        <div class="hero-image">
+            <img src="hero.jpg" alt="Arte de Zenless Zone Zero">
+        </div>
+
+        <div class="floating-card">
+            <small>STATUS DO SISTEMA</small>
+            <b>● ONLINE</b>
+            <small>HOLLOW INVESTIGATION</small>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SOBRE -->
+
+<section class="intro section" id="sobre">
+
+    <div class="section-kicker">
+        01 — ARQUIVO DO JOGO
+    </div>
+
+    <div class="intro-layout">
+
+        <div>
+            <h2>
+                UMA CIDADE.
+                <em>VÁRIOS MISTÉRIOS.</em>
+            </h2>
+        </div>
+
+        <div class="intro-text">
+
+            <p>
+                <strong>Zenless Zone Zero</strong> é um RPG de ação
+                desenvolvido pela HoYoverse. A história acontece
+                em Nova Eridu, uma cidade que sobreviveu ao surgimento
+                de fenômenos dimensionais conhecidos como Hollows.
+            </p>
+
+            <p>
+                Como Proxy, você acompanha agentes em missões
+                perigosas, enfrenta criaturas e desvenda histórias
+                em meio à vida urbana, música e muita personalidade.
+            </p>
+
+            <a class="under-link" href="#faccoes">
+                CONHEÇA AS FACÇÕES ↗
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="feature-strip">
+
+        <article>
+            <span class="feature-icon">✦</span>
+            <b>COMBATE DINÂMICO</b>
+            <small>
+                Monte equipes e combine estilos de luta.
+            </small>
+        </article>
+
+        <article>
+            <span class="feature-icon">⌁</span>
+            <b>VIDA URBANA</b>
+            <small>
+                Explore lojas, ruas e histórias da cidade.
+            </small>
+        </article>
+
+        <article>
+            <span class="feature-icon">◈</span>
+            <b>AGENTES ÚNICOS</b>
+            <small>
+                Conheça personagens com suas próprias motivações.
+            </small>
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- AGENTES -->
+
+<section class="agents section" id="agentes">
+
+    <div class="section-heading">
+
+        <div>
+            <div class="section-kicker">
+                02 — BANCO DE DADOS
+            </div>
+
+            <h2>
+                ESCOLHA SEU <em>AGENTE.</em>
+            </h2>
+        </div>
+
+        <p>
+            Alguns rostos conhecidos de Nova Eridu.
+            Use a busca para encontrar um agente.
+        </p>
+
+    </div>
+
+    <div class="agent-tools">
+
+        <label class="search-box">
+            <span>⌕</span>
+
+            <input
+                type="search"
+                id="agentSearch"
+                placeholder="Buscar agente ou facção..."
+            >
+        </label>
+
+        <div class="filter-list" id="filters">
+
+            <button class="filter active" data-filter="todos">
+                TODOS
+            </button>
+
+            <button class="filter" data-filter="Cunning Hares">
+                CUNNING HARES
+            </button>
+
+            <button class="filter" data-filter="Belobog">
+                BELOBOG
+            </button>
+
+            <button class="filter" data-filter="Victoria">
+                VICTORIA
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="agent-grid" id="agentGrid">
+
+        <article class="agent-card"
+            data-name="Nicole Demara"
+            data-faction="Cunning Hares">
+
+            <div class="agent-photo">
+                <img src="nicole.jpg" alt="Nicole Demara">
+            </div>
+
+            <div class="agent-info">
+                <div>
+                    <h3>Nicole Demara</h3>
+                    <span>CUNNING HARES</span>
+                </div>
+                <b>01</b>
+            </div>
+
+        </article>
+
+
+        <article class="agent-card"
+            data-name="Anby Demara"
+            data-faction="Cunning Hares">
+
+            <div class="agent-photo">
+                <img src="anby.jpg" alt="Anby Demara">
+            </div>
+
+            <div class="agent-info">
+                <div>
+                    <h3>Anby Demara</h3>
+                    <span>CUNNING HARES</span>
+                </div>
+                <b>02</b>
+            </div>
+
+        </article>
+
+
+        <article class="agent-card"
+            data-name="Billy Kid"
+            data-faction="Cunning Hares">
+
+            <div class="agent-photo">
+                <img src="billy.jpg" alt="Billy Kid">
+            </div>
+
+            <div class="agent-info">
+                <div>
+                    <h3>Billy Kid</h3>
+                    <span>CUNNING HARES</span>
+                </div>
+                <b>03</b>
+            </div>
+
+        </article>
+
+
+        <article class="agent-card"
+            data-name="Koleda Belobog"
+            data-faction="Belobog">
+
+            <div class="agent-photo">
+                <img src="koleda.jpg" alt="Koleda Belobog">
+            </div>
+
+            <div class="agent-info">
+                <div>
+                    <h3>Koleda Belobog</h3>
+                    <span>BELOBOG</span>
+                </div>
+                <b>04</b>
+            </div>
+
+        </article>
+
+
+        <article class="agent-card"
+            data-name="Grace Howard"
+            data-faction="Belobog">
+
+            <div class="agent-photo">
+                <img src="grace.jpg" alt="Grace Howard">
+            </div>
+
+            <div class="agent-info">
+                <div>
+                    <h3>Grace Howard</h3>
+                    <span>BELOBOG</span>
+                </div>
+                <b>05</b>
+            </div>
+
+        </article>
+
+
+        <article class="agent-card"
+            data-name="Ellen Joe"
+            data-faction="Victoria">
+
+            <div class="agent-photo">
+                <img src="elen.jpg" alt="Ellen Joe">
+            </div>
+
+            <div class="agent-info">
+                <div>
+                    <h3>Ellen Joe</h3>
+                    <span>VICTORIA HOUSEKEEPING</span>
+                </div>
+                <b>06</b>
+            </div>
+
+        </article>
+
+    </div>
+
+    <p class="no-results" id="noResults" hidden>
+        Nenhum agente encontrado.
+    </p>
+
+</section>
+
+
+<!-- FACÇÕES -->
+
+<section class="factions section" id="faccoes">
+
+    <div class="section-kicker">
+        03 — ORGANIZAÇÕES
+    </div>
+
+    <div class="section-heading">
+
+        <h2>
+            QUEM MOVE
+            <em>NOVA ERIDU?</em>
+        </h2>
+
+        <p>
+            Conheça alguns grupos que fazem parte
+            do universo de Zenless Zone Zero.
+        </p>
+
+    </div>
+
+    <div class="faction-grid">
+
+        <article class="faction-card">
+
+            <div class="faction-number">01 / FACTION</div>
+
+            <div class="faction-symbol">✦</div>
+
+            <h3>CUNNING HARES</h3>
+
+            <p>
+                Um grupo independente que aceita trabalhos variados
+                e encara missões nos Hollows.
+            </p>
+
+            <span>INDEPENDENT CONTRACTORS</span>
+
+        </article>
+
+
+        <article class="faction-card faction-two">
+
+            <div class="faction-number">02 / FACTION</div>
+
+            <div class="faction-symbol">⚙</div>
+
+            <h3>BELOBOG</h3>
+
+            <p>
+                Uma empresa ligada à construção e à indústria,
+                conhecida por seus trabalhadores determinados.
+            </p>
+
+            <span>HEAVY INDUSTRIES</span>
+
+        </article>
+
+
+        <article class="faction-card faction-three">
+
+            <div class="faction-number">03 / FACTION</div>
+
+            <div class="faction-symbol">♜</div>
+
+            <h3>VICTORIA HOUSEKEEPING</h3>
+
+            <p>
+                Uma equipe de funcionários elegantes que também
+                sabe lidar com tarefas nada comuns.
+            </p>
+
+            <span>PROFESSIONAL SERVICE</span>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- NOVA ERIDU -->
+
+<section class="city section" id="mundos">
+
+    <div class="city-visual">
+
+        <img
+            src="nova-eridu.jpg"
+            alt="Cidade de Nova Eridu"
+        >
+
+    </div>
+
+    <div class="city-copy">
+
+        <div class="section-kicker">
+            04 — LOCALIZAÇÃO
+        </div>
+
+        <h2>
+            A CIDADE
+            QUE NUNCA
+            <em>PARA.</em>
+        </h2>
+
+        <p>
+            Nova Eridu é o último grande refúgio da humanidade
+            em um mundo transformado pelos Hollows.
+            Entre uma missão e outra, sempre existe algo
+            para descobrir.
+        </p>
+
+        <div class="city-coordinates">
+            <span>NEW ERIDU</span>
+            <span>ATIVIDADE ETÉREA: DETECTADA</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FINAL -->
+
+<section class="closing">
+
+    <div class="closing-mark">Z</div>
+
+    <div class="section-kicker">
+        FIM DA TRANSMISSÃO
+    </div>
+
+    <h2>
+        TE VEJO EM
+        <em>NOVA ERIDU.</em>
+    </h2>
+
+    <a class="button" href="#inicio">
+        VOLTAR AO TOPO ↑
+    </a>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <a class="footer-brand" href="#inicio">
+        NEW ERIDU
+        <span>FAN DATABASE</span>
+    </a>
+
+    <p>
+        Projeto de fã, sem vínculo oficial com a HoYoverse.
+    </p>
+
+    <span>© 2026 · ZZZ FAN SITE</span>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
