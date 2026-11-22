@@ -1,13 +1,14 @@
 
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description" content="Um guia de fã sobre Zenless Zone Zero.">
 
-    <title>Zenless Zone Zero | New Eridu</title>
+    <title>Zenless Zone Zero | Nova Eridu</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +31,9 @@
         </span>
     </a>
 
-    <button class="menu-toggle" id="menuToggle">☰</button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        ☰
+    </button>
 
     <nav id="mainNav">
         <a href="#sobre">O JOGO</a>
@@ -58,7 +61,7 @@
         </div>
 
         <h1>
-            BEM VINDO AO
+            BEM-VINDO AO
             <span>ZENLESS ZONE ZERO</span><i>.</i>
         </h1>
 
@@ -108,9 +111,13 @@
         </div>
 
         <div class="floating-card">
-            <small>STATUS DO SISTEMA</small>
-            <b>● ONLINE</b>
-            <small>HOLLOW INVESTIGATION</small>
+
+            <small>ESTADO DO SISTEMA</small>
+
+            <b>● CONECTADO</b>
+
+            <small>INVESTIGAÇÃO DOS HOLLOWS</small>
+
         </div>
 
     </div>
@@ -118,7 +125,7 @@
 </section>
 
 
-<!-- SOBRE -->
+<!-- SOBRE O JOGO -->
 
 <section class="intro section" id="sobre">
 
@@ -129,10 +136,12 @@
     <div class="intro-layout">
 
         <div>
+
             <h2>
                 UMA CIDADE.
                 <em>VÁRIOS MISTÉRIOS.</em>
             </h2>
+
         </div>
 
         <div class="intro-text">
@@ -161,27 +170,39 @@
     <div class="feature-strip">
 
         <article>
+
             <span class="feature-icon">✦</span>
+
             <b>COMBATE DINÂMICO</b>
+
             <small>
                 Monte equipes e combine estilos de luta.
             </small>
+
         </article>
 
         <article>
+
             <span class="feature-icon">⌁</span>
+
             <b>VIDA URBANA</b>
+
             <small>
                 Explore lojas, ruas e histórias da cidade.
             </small>
+
         </article>
 
         <article>
+
             <span class="feature-icon">◈</span>
+
             <b>AGENTES ÚNICOS</b>
+
             <small>
                 Conheça personagens com suas próprias motivações.
             </small>
+
         </article>
 
     </div>
@@ -196,6 +217,7 @@
     <div class="section-heading">
 
         <div>
+
             <div class="section-kicker">
                 02 — BANCO DE DADOS
             </div>
@@ -203,6 +225,7 @@
             <h2>
                 ESCOLHA SEU <em>AGENTE.</em>
             </h2>
+
         </div>
 
         <p>
@@ -212,16 +235,21 @@
 
     </div>
 
+    <!-- PESQUISA E FILTROS -->
+
     <div class="agent-tools">
 
         <label class="search-box">
+
             <span>⌕</span>
 
             <input
                 type="search"
                 id="agentSearch"
                 placeholder="Buscar agente ou facção..."
+                aria-label="Buscar agente ou facção"
             >
+
         </label>
 
         <div class="filter-list" id="filters">
@@ -230,8 +258,8 @@
                 TODOS
             </button>
 
-            <button class="filter" data-filter="Cunning Hares">
-                Lebres astutas
+            <button class="filter" data-filter="Lebres astutas">
+                LEBRES ASTUTAS
             </button>
 
             <button class="filter" data-filter="Belobog">
@@ -239,127 +267,174 @@
             </button>
 
             <button class="filter" data-filter="Victoria">
-                Agência de pessoal doméstico "Victoria"
+                VICTORIA
             </button>
 
         </div>
 
     </div>
 
+
+    <!-- LISTA DE AGENTES -->
+
     <div class="agent-grid" id="agentGrid">
+
+
+        <!-- NICOLE -->
 
         <article class="agent-card"
             data-name="Nicole Demara"
-            data-faction="Cunning Hares">
+            data-faction="Lebres astutas">
 
             <div class="agent-photo">
+
                 <img src="nicole.jpg" alt="Nicole Demara">
+
             </div>
 
             <div class="agent-info">
+
                 <div>
                     <h3>Nicole Demara</h3>
-                    <span>Lebres astutas</span>
+                    <span>LEBRES ASTUTAS</span>
                 </div>
+
                 <b>01</b>
+
             </div>
 
         </article>
 
+
+        <!-- ANBY -->
 
         <article class="agent-card"
             data-name="Anby Demara"
             data-faction="Lebres astutas">
 
             <div class="agent-photo">
+
                 <img src="anby.jpg" alt="Anby Demara">
+
             </div>
 
             <div class="agent-info">
+
                 <div>
                     <h3>Anby Demara</h3>
-                    <span>Lebres astutas</span>
+                    <span>LEBRES ASTUTAS</span>
                 </div>
+
                 <b>02</b>
+
             </div>
 
         </article>
 
+
+        <!-- BILLY -->
 
         <article class="agent-card"
             data-name="Billy Kid"
-            data-faction="Cunning Hares">
+            data-faction="Lebres astutas">
 
             <div class="agent-photo">
+
                 <img src="billy.jpg" alt="Billy Kid">
+
             </div>
 
             <div class="agent-info">
+
                 <div>
                     <h3>Billy Kid</h3>
-                    <span>Lebres astutas</span>
+                    <span>LEBRES ASTUTAS</span>
                 </div>
+
                 <b>03</b>
+
             </div>
 
         </article>
 
+
+        <!-- KOLEDA -->
 
         <article class="agent-card"
             data-name="Koleda Belobog"
             data-faction="Belobog">
 
             <div class="agent-photo">
+
                 <img src="koleda.jpg" alt="Koleda Belobog">
+
             </div>
 
             <div class="agent-info">
+
                 <div>
                     <h3>Koleda Belobog</h3>
                     <span>BELOBOG</span>
                 </div>
+
                 <b>04</b>
+
             </div>
 
         </article>
 
+
+        <!-- GRACE -->
 
         <article class="agent-card"
             data-name="Grace Howard"
             data-faction="Belobog">
 
             <div class="agent-photo">
+
                 <img src="grace.jpg" alt="Grace Howard">
+
             </div>
 
             <div class="agent-info">
+
                 <div>
                     <h3>Grace Howard</h3>
                     <span>BELOBOG</span>
                 </div>
+
                 <b>05</b>
+
             </div>
 
         </article>
 
+
+        <!-- ELLEN -->
 
         <article class="agent-card"
             data-name="Ellen Joe"
-            data-faction=Agência de pessoal doméstico "Victoria">
+            data-faction="Victoria">
 
             <div class="agent-photo">
-                <img src="elen.jpg" alt="Ellen Joe">
+
+                <img src="ellen.jpg" alt="Ellen Joe">
+
             </div>
 
             <div class="agent-info">
+
                 <div>
                     <h3>Ellen Joe</h3>
-                    <span>Agência de pessoal doméstico "Victoria"</span>
+                    <span>VICTORIA</span>
                 </div>
+
                 <b>06</b>
+
             </div>
 
         </article>
+
 
     </div>
 
@@ -394,27 +469,36 @@
 
     <div class="faction-grid">
 
+
+        <!-- LEBRES ASTUTAS -->
+
         <article class="faction-card">
 
-            <div class="faction-number">01 / FACTION</div>
+            <div class="faction-number">
+                01 / FACÇÃO
+            </div>
 
             <div class="faction-symbol">✦</div>
 
-            <h3>CUNNING HARES</h3>
+            <h3>LEBRES ASTUTAS</h3>
 
             <p>
                 Um grupo independente que aceita trabalhos variados
                 e encara missões nos Hollows.
             </p>
 
-            <span>INDEPENDENT CONTRACTORS</span>
+            <span>CONTRATADOS INDEPENDENTES</span>
 
         </article>
 
 
+        <!-- BELOBOG -->
+
         <article class="faction-card faction-two">
 
-            <div class="faction-number">02 / FACTION</div>
+            <div class="faction-number">
+                02 / FACÇÃO
+            </div>
 
             <div class="faction-symbol">⚙</div>
 
@@ -425,25 +509,29 @@
                 conhecida por seus trabalhadores determinados.
             </p>
 
-            <span>HEAVY INDUSTRIES</span>
+            <span>INDÚSTRIA PESADA</span>
 
         </article>
 
 
+        <!-- VICTORIA -->
+
         <article class="faction-card faction-three">
 
-            <div class="faction-number">03 / FACTION</div>
+            <div class="faction-number">
+                03 / FACÇÃO
+            </div>
 
             <div class="faction-symbol">♜</div>
 
-            <h3>VICTORIA HOUSEKEEPING</h3>
+            <h3>VICTORIA</h3>
 
             <p>
-                Uma equipe de funcionários elegantes que também
-                sabe lidar com tarefas nada comuns.
+                Uma equipe de funcionários domésticos elegantes
+                que também sabe lidar com tarefas nada comuns.
             </p>
 
-            <span>PROFESSIONAL SERVICE</span>
+            <span>SERVIÇOS PROFISSIONAIS</span>
 
         </article>
 
@@ -485,8 +573,11 @@
         </p>
 
         <div class="city-coordinates">
-            <span>NEW ERIDU</span>
+
+            <span>NOVA ERIDU</span>
+
             <span>ATIVIDADE ETÉREA: DETECTADA</span>
+
         </div>
 
     </div>
@@ -518,20 +609,26 @@
 </main>
 
 
+<!-- RODAPÉ -->
+
 <footer>
 
     <a class="footer-brand" href="#inicio">
-        NEW ERIDU
-        <span>FAN DATABASE</span>
+
+        NOVA ERIDU
+
+        <span>BANCO DE DADOS DE FÃ</span>
+
     </a>
 
     <p>
         Projeto de fã, sem vínculo oficial com a HoYoverse.
     </p>
 
-    <span>© 2026 · ZZZ FAN SITE</span>
+    <span>© 2026 · SITE DE FÃ ZZZ</span>
 
 </footer>
+
 
 <script src="script.js"></script>
 
